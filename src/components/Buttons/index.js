@@ -2,6 +2,8 @@ import React, {useEffect, useRef} from 'react'
 import css from './Buttons.module.css'
 import {useSelector, useDispatch} from 'react-redux'
 import {saveFileSaga, deleteFileSaga, loadFilesSaga} from '../../redux/ducks/file'
+import SaveAltIcon from '@material-ui/icons/SaveAlt'
+import DeleteIcon from '@material-ui/icons/Delete'
 
 export default function Buttons() {
 
@@ -30,8 +32,8 @@ export default function Buttons() {
 
   return (
     <div className={css.Buttons} ref={buttonsContainerRef}>
-      <button onClick={handleSave}>SAVE</button>
-      <button onClick={handleDelete}>DELETE</button>
+      <SaveAltIcon onClick={handleSave}></SaveAltIcon>
+      <DeleteIcon onClick={handleDelete}>DELETE</DeleteIcon>
     </div>
   )
 }
