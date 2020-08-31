@@ -1,0 +1,19 @@
+.Editor {
+  height: 600px; 
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre;
+}
+
+.HandleTab {
+  white-space: pre-wrap
+}
+
+.Editor div {
+  font-family: inherit;
+}

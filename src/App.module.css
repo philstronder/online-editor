@@ -1,0 +1,9 @@
+.SidebarContainer {
+  flex: 3;
+  margin: 20px;
+  min-width: 400px;
+}
+
+.EditorContainer {
+  flex: 9;
+}
